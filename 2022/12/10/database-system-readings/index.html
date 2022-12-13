@@ -17,24 +17,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lifengfan13.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="article">
+    <meta name="description" content="IntroductionThis is a curated reading list about database systems, including personal digests of books&#x2F;papers&#x2F;blogs. Booklist can be found in README, while paper and blog digests are located">
+<meta property="og:type" content="article">
 <meta property="og:title" content="database system readings">
-<meta property="og:url" content="http://example.com/2022/12/10/database-system-readings/index.html">
+<meta property="og:url" content="https://lifengfan13.github.io/2022/12/10/database-system-readings/index.html">
 <meta property="og:site_name" content="老樊的博客">
+<meta property="og:description" content="IntroductionThis is a curated reading list about database systems, including personal digests of books&#x2F;papers&#x2F;blogs. Booklist can be found in README, while paper and blog digests are located">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-10T07:03:21.000Z">
-<meta property="article:modified_time" content="2022-12-10T07:03:37.962Z">
+<meta property="article:modified_time" content="2022-12-13T02:05:54.361Z">
 <meta property="article:author" content="老樊">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2022/12/10/database-system-readings/">
+<link rel="canonical" href="https://lifengfan13.github.io/2022/12/10/database-system-readings/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/12/10/database-system-readings/","path":"2022/12/10/database-system-readings/","title":"database system readings"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://lifengfan13.github.io/2022/12/10/database-system-readings/","path":"2022/12/10/database-system-readings/","title":"database system readings"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>database system readings | 老樊的博客</title>
@@ -98,7 +100,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -111,6 +113,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Books"><span class="nav-number">2.</span> <span class="nav-text">Books</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PhD-Thesis"><span class="nav-number">3.</span> <span class="nav-text">PhD Thesis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Papers"><span class="nav-number">4.</span> <span class="nav-text">Papers</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,7 +164,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/10/database-system-readings/">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/10/database-system-readings/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -189,9 +192,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-12-10 15:03:21 / 修改时间：15:03:37" itemprop="dateCreated datePublished" datetime="2022-12-10T15:03:21+08:00">2022-12-10</time>
+      <time title="创建时间：2022-12-10 15:03:21" itemprop="dateCreated datePublished" datetime="2022-12-10T15:03:21+08:00">2022-12-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-12-13 10:05:54" itemprop="dateModified" datetime="2022-12-13T10:05:54+08:00">2022-12-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -213,7 +222,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a curated reading list about database systems, including personal digests of books&#x2F;papers&#x2F;blogs.</p>
+<p>Booklist can be found in README, while paper and blog digests are located in the issue list.</p>
+<p>In the issue list, a closed issue means that the digest about it was finished, while an open one means that the digest is to-be-appeared or on-the-flying.</p>
+<p>For each paper digest, I try to answer the following questions:</p>
+<ul>
+<li>What problem does the paper solve? Is it important?</li>
+<li>How does it solve the problem? Any approaches new?</li>
+<li>What could be improved?</li>
+<li>Anything interesting about it?</li>
+</ul>
+<h1 id="Books"><a href="#Books" class="headerlink" title="Books"></a>Books</h1><ul>
+<li>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</li>
+<li>Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing</li>
+<li>Stream Processing with Apache Flink</li>
+</ul>
+<h1 id="PhD-Thesis"><a href="#PhD-Thesis" class="headerlink" title="PhD Thesis"></a>PhD Thesis</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-935.pdf">Distributed consensus revised</a></li>
+</ul>
+<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1>
     </div>
 
     
