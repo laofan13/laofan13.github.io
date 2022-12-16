@@ -28,7 +28,7 @@
 <meta property="og:description" content="Introduction在计算机科学中，互斥是并发控制的一个属性，其目的是防止竞争条件。要求一个执行线程永远不会进入临界区，而并发执行线程已经在访问该临界区，这是指一个执行线程访问共享资源或共享内存的时间间隔。共享资源是一个数据对象，两个或多个并发线程正在尝试修改（其中允许两个并发读取操作，但不允许两个并发写入操作或一个读取和一个写入操作，因为这会导致数据不一致）。互斥算法确保如果一个进程已经在对">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-16T07:16:36.000Z">
-<meta property="article:modified_time" content="2022-12-16T09:18:48.667Z">
+<meta property="article:modified_time" content="2022-12-16T09:22:10.963Z">
 <meta property="article:author" content="老樊">
 <meta property="article:tag" content="mutual exclusion">
 <meta name="twitter:card" content="summary">
@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-12-16 15:16:36 / 修改时间：17:18:48" itemprop="dateCreated datePublished" datetime="2022-12-16T15:16:36+08:00">2022-12-16</time>
+              <time title="创建时间：2022-12-16 15:16:36 / 修改时间：17:22:10" itemprop="dateCreated datePublished" datetime="2022-12-16T15:16:36+08:00">2022-12-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -215,11 +215,12 @@
       
         <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>在计算机科学中，互斥是并发控制的一个属性，其目的是防止竞争条件。要求一个执行线程永远不会进入临界区，而并发执行线程已经在访问该临界区，这是指一个执行线程访问共享资源或共享内存的时间间隔。<br>共享资源是一个数据对象，两个或多个并发线程正在尝试修改（其中允许两个并发读取操作，但不允许两个并发写入操作或一个读取和一个写入操作，因为这会导致数据不一致）。互斥算法确保如果一个进程已经在对数据对象[临界区]执行写操作，则在第一个进程完成对数据对象[临界区]的写入之前，不允许其他进程&#x2F;线程访问&#x2F;修改同一对象并释放该对象供其他进程读取和写入。</p>
 <h1 id="mutual-exlusion-问题"><a href="#mutual-exlusion-问题" class="headerlink" title="mutual exlusion 问题"></a>mutual exlusion 问题</h1><p>假设有N个计算机，每个计算机内部都有一个进程，方便起见，可以认为这些进程都是在不断地循环执行一段逻辑。在每个执行周期内都有一个“critical-section”，需要以某种方式对这些计算机进行编程，以确保任意时刻这个N个进程中只有一个会处于“critical-section”。为了实现临界区的互斥执行，这些计算机相互之间可以通过一个共享存储模块进行通信。针对该存储模块的一个以word为单位的读写操作可以认为是原子的，比如当有两个或更多的计算机试图同时读写同一个存储单元时，这些操作会以未知顺序依次完成[1]。</p>
-<h2 id="这个问题有如下几个要求："><a href="#这个问题有如下几个要求：" class="headerlink" title="这个问题有如下几个要求："></a>这个问题有如下几个要求：</h2><pre><code>1. 任何时间，最多只能有一台机器进入 critical section；
-2. 每台机器最终都会进入 critical section；
-3. 每台电脑都能停在 noncritical section；
-4. 不能对机器的速度做任何假设。
-</code></pre>
+<h2 id="这个问题有如下几个要求："><a href="#这个问题有如下几个要求：" class="headerlink" title="这个问题有如下几个要求："></a>这个问题有如下几个要求：</h2><ol>
+<li>任何时间，最多只能有一台机器进入 critical section；</li>
+<li>每台机器最终都会进入 critical section；</li>
+<li>每台电脑都能停在 noncritical section；</li>
+<li>不能对机器的速度做任何假设。</li>
+</ol>
 <h2 id="该解决方案必须满足以下要求："><a href="#该解决方案必须满足以下要求：" class="headerlink" title="该解决方案必须满足以下要求："></a>该解决方案必须满足以下要求：</h2><ul>
 <li>该解决方案对于N个计算机来说必须是对称的，这意味着不能引入静态的优先级</li>
 <li>不能对这个N个计算机的相对执行速度有任何假设，甚至不能假设它们的执行速度是一个常数时间</li>
