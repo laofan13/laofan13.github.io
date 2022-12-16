@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"lifengfan13.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="老樊的博客">
+<meta property="og:url" content="https://lifengfan13.github.io/index.html">
+<meta property="og:site_name" content="老樊的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="老樊">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://lifengfan13.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>老樊的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">老樊的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/16/mutual-exclusion-algorithms/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="老樊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老樊的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/16/mutual-exclusion-algorithms/" class="post-title-link" itemprop="url">mutual exclusion algorithms</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-16 15:16:36 / 修改时间：17:09:18" itemprop="dateCreated datePublished" datetime="2022-12-16T15:16:36+08:00">2022-12-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mutual-exclusion/" itemprop="url" rel="index"><span itemprop="name">mutual-exclusion</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>在计算机科学中，互斥是并发控制的一个属性，其目的是防止竞争条件。要求一个执行线程永远不会进入临界区，而并发执行线程已经在访问该临界区，这是指一个执行线程访问共享资源或共享内存的时间间隔。<br>共享资源是一个数据对象，两个或多个并发线程正在尝试修改（其中允许两个并发读取操作，但不允许两个并发写入操作或一个读取和一个写入操作，因为这会导致数据不一致）。互斥算法确保如果一个进程已经在对数据对象[临界区]执行写操作，则在第一个进程完成对数据对象[临界区]的写入之前，不允许其他进程&#x2F;线程访问&#x2F;修改同一对象并释放该对象供其他进程读取和写入。</p>
+<h1 id="mutual-exlusion-问题"><a href="#mutual-exlusion-问题" class="headerlink" title="mutual exlusion 问题"></a>mutual exlusion 问题</h1><p>假设有N个计算机，每个计算机内部都有一个进程，方便起见，可以认为这些进程都是在不断地循环执行一段逻辑。在每个执行周期内都有一个“critical-section”，需要以某种方式对这些计算机进行编程，以确保任意时刻这个N个进程中只有一个会处于“critical-section”。为了实现临界区的互斥执行，这些计算机相互之间可以通过一个共享存储模块进行通信。针对该存储模块的一个以word为单位的读写操作可以认为是原子的，比如当有两个或更多的计算机试图同时读写同一个存储单元时，这些操作会以未知顺序依次完成[1]。</p>
+<h2 id="这个问题有如下几个要求："><a href="#这个问题有如下几个要求：" class="headerlink" title="这个问题有如下几个要求："></a>这个问题有如下几个要求：</h2><pre><code>1. 任何时间，最多只能有一台机器进入 critical section；
+2. 每台机器最终都会进入 critical section；
+3. 每台电脑都能停在 noncritical section；
+4. 不能对机器的速度做任何假设。
+</code></pre>
+<h2 id="该解决方案必须满足以下要求："><a href="#该解决方案必须满足以下要求：" class="headerlink" title="该解决方案必须满足以下要求："></a>该解决方案必须满足以下要求：</h2><ul>
+<li>该解决方案对于N个计算机来说必须是对称的，这意味着不能引入静态的优先级</li>
+<li>不能对这个N个计算机的相对执行速度有任何假设，甚至不能假设它们的执行速度是一个常数时间</li>
+<li>如果有多于一个的计算机要进入到临界区，必须能在有限时间内决定由哪一个首先进入临界区。换句话说，对于那些可能会出现“after you”-“after you”阻塞情况的解决方案来说，就算无法检测出来，也不会被认为是合法的。</li>
+</ul>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="Dijkstra-解法"><a href="#Dijkstra-解法" class="headerlink" title="Dijkstra 解法"></a>Dijkstra 解法</h2><p>Solution of a Problem in Concurrent Programming Control</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">bool b[N],c[N];</span><br><span class="line">integer k;</span><br><span class="line">begin integer j;</span><br><span class="line">LO: b[i] := false</span><br><span class="line">L1: if k != i then</span><br><span class="line">L2:     c[i] := true;</span><br><span class="line">L3:     if b[k] then </span><br><span class="line">            k := i;</span><br><span class="line">        goto Ll</span><br><span class="line">    else</span><br><span class="line">L4:     c[i] := false;</span><br><span class="line">        for j := 1 step 1 until N do</span><br><span class="line">            if j != i and not c[j] then</span><br><span class="line">                goto L1;</span><br><span class="line">    end;</span><br><span class="line">    critical section;</span><br><span class="line">    c[i] := true; b[i] := true;</span><br><span class="line">    remainder of the cycle in which stopping is allowed;</span><br><span class="line">    goto LO</span><br></pre></td></tr></table></figure>
+<p>一个计数器的例子，一共启动五个进程，每一个进程对计数器加一五千次：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;pthread.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NLOOP 5000</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 5</span></span><br><span class="line"><span class="type">int</span> selected[N], control[N], k;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> counter;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">doit</span><span class="params">(<span class="type">int</span> i)</span> &#123;</span><br><span class="line">    selected[i] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(k != i) &#123;</span><br><span class="line">            control[i] = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span> (selected[k] == <span class="number">1</span>) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        k = i;</span><br><span class="line">        control[i] = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> faild = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; N; ++j) &#123;</span><br><span class="line">            <span class="keyword">if</span>(j != i &amp;&amp; control[j] == <span class="number">1</span>) &#123;</span><br><span class="line">                faild = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(!faild)</span><br><span class="line">           <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// critical section</span></span><br><span class="line">    <span class="type">int</span> val = counter;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d: %d\n&quot;</span>, i, val + <span class="number">1</span>);</span><br><span class="line">    counter = val + <span class="number">1</span>;</span><br><span class="line">    selected[i] = <span class="number">0</span>;</span><br><span class="line">    control[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">judge</span><span class="params">(<span class="type">int</span> no)</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d start tick!\n&quot;</span>, no);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; NLOOP; ++i) &#123;</span><br><span class="line">        doit(no);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d exit\n&quot;</span>, no);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> **argv)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">pthread_t</span> tids[N];</span><br><span class="line">    <span class="built_in">memset</span>(selected,<span class="number">0</span>,<span class="keyword">sizeof</span>(selected));</span><br><span class="line">    <span class="built_in">memset</span>(control,<span class="number">0</span>,<span class="keyword">sizeof</span>(control));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; N; ++i) &#123;</span><br><span class="line">        pthread_create(&amp;tids[i], <span class="literal">NULL</span>, judge, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/* wait for both threads to terminate */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; N; ++i) &#123;</span><br><span class="line">        pthread_join(tids[i], <span class="literal">NULL</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;end counter = %d\n&quot;</span>, counter);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Knuth-解法"><a href="#Knuth-解法" class="headerlink" title="Knuth  解法"></a>Knuth  解法</h2><p>Solution of a Problem in Concurrent Programming Control</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">integer control[N], k;</span><br><span class="line">begin integer j;</span><br><span class="line">L0: control[i] := 1;</span><br><span class="line">L1: for j := k step -1 until 1, N step -1 until 1 do</span><br><span class="line">        if j = i then</span><br><span class="line">            goto L2;</span><br><span class="line">        if control[j] != 0 then</span><br><span class="line">            goto L1</span><br><span class="line">L2: control[i] := 2;</span><br><span class="line">    for j := N step -1 until 1 do</span><br><span class="line">        if j != i and control[j] = 2 then</span><br><span class="line">        		goto L0;</span><br><span class="line">L3: k := i;</span><br><span class="line">    critical section;</span><br><span class="line">    k := if i = 1 then N else i - 1;</span><br><span class="line">L4: control[i] := 0;</span><br><span class="line">L5: remainder of cycle in which stopping is allowed;</span><br><span class="line">    goto L0</span><br></pre></td></tr></table></figure>
+<p>C程序：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;pthread.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NLOOP 5000</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 5</span></span><br><span class="line"><span class="type">int</span> control[N],k;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> counter;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">doit</span><span class="params">(<span class="type">int</span> i)</span> &#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">        control[i] = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> j = k;</span><br><span class="line">        <span class="keyword">while</span>(j != i) &#123;</span><br><span class="line">            <span class="keyword">if</span>(control[j] != <span class="number">0</span>) &#123;</span><br><span class="line">                j = k;</span><br><span class="line">            &#125;</span><br><span class="line">            j = (j - <span class="number">1</span> + N) % N;</span><br><span class="line">        &#125;</span><br><span class="line">        control[i] = <span class="number">2</span>;</span><br><span class="line">        <span class="type">int</span> faild = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = N - <span class="number">1</span>; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">            <span class="keyword">if</span>(j != i &amp;&amp; control[j] == <span class="number">2</span>) &#123;</span><br><span class="line">                faild = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(faild == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// critical section</span></span><br><span class="line">    k = i;</span><br><span class="line">    <span class="type">int</span> val = counter;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d: %d\n&quot;</span>, i, val + <span class="number">1</span>);</span><br><span class="line">    counter = val + <span class="number">1</span>;</span><br><span class="line">    k = i &gt; <span class="number">0</span> ? i - <span class="number">1</span>: N - <span class="number">1</span>;</span><br><span class="line">    control[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">judge</span><span class="params">(<span class="type">int</span> no)</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d start tick!\n&quot;</span>, no);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; NLOOP; ++i) &#123;</span><br><span class="line">        doit(no);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d exit\n&quot;</span>, no);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> **argv)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">pthread_t</span> tids[N];</span><br><span class="line">    <span class="built_in">memset</span>(control, <span class="number">0</span>, <span class="keyword">sizeof</span>(control));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; N; ++i) &#123;</span><br><span class="line">        pthread_create(&amp;tids[i], <span class="literal">NULL</span>, judge, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/* wait for both threads to terminate */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; N; ++i) &#123;</span><br><span class="line">        pthread_join(tids[i], <span class="literal">NULL</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;end counter = %d\n&quot;</span>, counter);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Lamport-解法"><a href="#Lamport-解法" class="headerlink" title="Lamport 解法"></a>Lamport 解法</h2><p>A New Solution of Dijkstra’s Concurrent Programming Problem</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">integer array choosing[N], number[N]</span><br><span class="line">begin integer j;</span><br><span class="line">L1: choosing[i] := 1;</span><br><span class="line">    number[i] := 1 + maximum(number[l],..., number[N]);</span><br><span class="line">    choosing[i] := 0;</span><br><span class="line">    for j = 1 step 1 until N do</span><br><span class="line">        begin</span><br><span class="line">L2:         if choosing[j] != 0 then </span><br><span class="line">                goto L2;</span><br><span class="line">L3:         if number[j] != 0 &amp;&amp; (number[j], j) &lt; (number[i],i) then</span><br><span class="line">                goto L3;</span><br><span class="line">     	end;</span><br><span class="line">    critical section;</span><br><span class="line">    number[i] := O;</span><br><span class="line">    noncritical section;</span><br><span class="line">    goto L1;</span><br></pre></td></tr></table></figure>
+<p>C程序：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;pthread.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NLOOP 5000</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 5</span></span><br><span class="line"><span class="type">int</span> choosing[N], number[N];</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> counter; </span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">doit</span><span class="params">(<span class="type">int</span> i)</span> &#123;</span><br><span class="line">    choosing[i] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> max = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j &lt; N; ++j) &#123;</span><br><span class="line">        <span class="keyword">if</span>(number[j] &gt; max) &#123;</span><br><span class="line">            max = number[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    number[i] = <span class="number">1</span> + max;</span><br><span class="line">    choosing[i] = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; N; ++j) &#123;</span><br><span class="line">        <span class="keyword">while</span>(choosing[j] != <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">while</span>(number[j] != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(number[j] &gt; number[i] || (number[j] == number[i] &amp;&amp; j &gt;= i))</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// critical section</span></span><br><span class="line">    <span class="type">int</span> val = counter;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d: %d\n&quot;</span>, i, val + <span class="number">1</span>);</span><br><span class="line">    counter = val + <span class="number">1</span>;</span><br><span class="line">    number[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">judge</span><span class="params">(<span class="type">int</span> no)</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d start tick!\n&quot;</span>, no);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; NLOOP; ++i) &#123;</span><br><span class="line">        doit(no);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;thread %d exit\n&quot;</span>, no);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> **argv)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">pthread_t</span> tids[N];</span><br><span class="line">    <span class="built_in">memset</span>(choosing,<span class="number">0</span>,<span class="keyword">sizeof</span>(choosing));</span><br><span class="line">    <span class="built_in">memset</span>(number,<span class="number">0</span>,<span class="keyword">sizeof</span>(number));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; N; ++i) &#123;</span><br><span class="line">        pthread_create(&amp;tids[i], <span class="literal">NULL</span>, judge, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/* wait for both threads to terminate */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; N; ++i) &#123;</span><br><span class="line">        pthread_join(tids[i], <span class="literal">NULL</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;end counter = %d\n&quot;</span>, counter);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这一系列上世纪六七十年代的论文让我感到震撼。每篇论文都不长，短的可能不到一页，长的三四页，但是几乎每篇都在提出重要的概念。3 位图灵奖获得者依次展现了科学家的伟大之处：提出重要问题，设定重要概念，给出关键结论。</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mutual_exclusion">Mutual exclusion</a></li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/10.1145/365559.365617">Solution of a Problem in Concurrent Programming Control</a></li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/355592.365595">Additional Comments on a Problem in Concurrent Programming Control</a></li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3335772.3335782">A New Solution of Dijkstra’s Concurrent Programming Problem</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/426969704">mutual exclusion 和面包店算法</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/13/database-system-readings/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="老樊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老樊的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/13/database-system-readings/" class="post-title-link" itemprop="url">database system readings</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-13 11:38:24 / 修改时间：11:47:50" itemprop="dateCreated datePublished" datetime="2022-12-13T11:38:24+08:00">2022-12-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a curated reading list about database systems, including personal digests of books&#x2F;papers&#x2F;blogs.</p>
+<p>Booklist can be found in README, while paper and blog digests are located in the issue list.</p>
+<p>In the issue list, a closed issue means that the digest about it was finished, while an open one means that the digest is to-be-appeared or on-the-flying.</p>
+<p>For each paper digest, I try to answer the following questions:</p>
+<ul>
+<li>What problem does the paper solve? Is it important?</li>
+<li>How does it solve the problem? Any approaches new?</li>
+<li>What could be improved?</li>
+<li>Anything interesting about it?</li>
+</ul>
+<h1 id="Books"><a href="#Books" class="headerlink" title="Books"></a>Books</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.db-book.com/">Database System Concepts(Seventh Edition)</a></li>
+<li><a target="_blank" rel="noopener" href="https://dataintensive.net/">Designing Data-Intensive Applications</a> <br>  The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</li>
+</ul>
+<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1><h2 id="concurrency-control"><a href="#concurrency-control" class="headerlink" title="concurrency control"></a>concurrency control</h2><h2 id="query-optimization"><a href="#query-optimization" class="headerlink" title="query optimization"></a>query optimization</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/abs/10.1145/275487.275492">system r query optimizer</a></li>
+</ul>
+<h1 id="PhD-Thesis"><a href="#PhD-Thesis" class="headerlink" title="PhD Thesis"></a>PhD Thesis</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/abs/10.1145/1620585.1620587">Serializable snapshot isolation</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.academia.edu/download/32488615/download.pdf">Cascades optimizer implement</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="老樊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老樊的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1/" class="post-title-link" itemprop="url">数据库事务</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-13 11:15:33" itemprop="dateCreated datePublished" datetime="2022-12-13T11:15:33+08:00">2022-12-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-14 15:41:33" itemprop="dateModified" datetime="2022-12-14T15:41:33+08:00">2022-12-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="数据库事务演变的历史"><a href="#数据库事务演变的历史" class="headerlink" title="数据库事务演变的历史"></a>数据库事务演变的历史</h1><h2 id="隔离级别标准的提出"><a href="#隔离级别标准的提出" class="headerlink" title="隔离级别标准的提出"></a>隔离级别标准的提出</h2><p><a target="_blank" rel="noopener" href="http://www.adp-gmbh.ch/ora/misc/isolation_level.html">a uniform definition to isolation levels</a></p>
+<ol>
+<li>已知的异常，脏读，不可重复读和幻读</li>
+<li></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/10/linux-%E5%86%85%E6%A0%B8%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="老樊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老樊的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/10/linux-%E5%86%85%E6%A0%B8%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">linux 内核调试配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-10 15:05:24" itemprop="dateCreated datePublished" datetime="2022-12-10T15:05:24+08:00">2022-12-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-13 11:12:27" itemprop="dateModified" datetime="2022-12-13T11:12:27+08:00">2022-12-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux%E5%86%85%E6%A0%B8/" itemprop="url" rel="index"><span itemprop="name">linux内核</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="调试linux内核"><a href="#调试linux内核" class="headerlink" title="调试linux内核"></a>调试linux内核</h1><h2 id="调试系统环境"><a href="#调试系统环境" class="headerlink" title="调试系统环境"></a>调试系统环境</h2><ul>
+<li>CPU amd64</li>
+<li>虚拟机ubuntu20.04</li>
+</ul>
+<h2 id="编译linux内核"><a href="#编译linux内核" class="headerlink" title="编译linux内核"></a>编译linux内核</h2><h3 id="1-安装编译工具链"><a href="#1-安装编译工具链" class="headerlink" title="1. 安装编译工具链"></a>1. 安装编译工具链</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libncurses5-dev  build-essential git bison flex libssl-dev</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-下载对应版本的linux内核"><a href="#2-下载对应版本的linux内核" class="headerlink" title="2. 下载对应版本的linux内核"></a>2. 下载对应版本的linux内核</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.129.tar.xz</span><br><span class="line">tar -xjf linux-5.10.129.tar.xz</span><br><span class="line"><span class="built_in">cd</span> linux-5.10.129</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-配置linux内核，添加调试信息"><a href="#3-配置linux内核，添加调试信息" class="headerlink" title="3. 配置linux内核，添加调试信息"></a>3. 配置linux内核，添加调试信息</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make defconfig ARCH=x86_64 ./scripts/config -e DEBUG_INFO -e DEBUG_KERNEL -e DEBUG_INFO_DWARF4</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-编译linux内核"><a href="#4-编译linux内核" class="headerlink" title="4. 编译linux内核"></a>4. 编译linux内核</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make ARCH=x86_64 Image -j8</span><br></pre></td></tr></table></figure>
+<p>编译完成后，会在x86目录下生成Image镜像</p>
+<!-- make ARCH=x86_64 Image -j8 CROSS_COMPILE=aarch64-linux-gnu- -->
+
+<h2 id="制作根文件系统"><a href="#制作根文件系统" class="headerlink" title="制作根文件系统"></a>制作根文件系统</h2><p>linux的启动需要配合根文件系统，这里我们利用busybox来制作一个简单的根文件系统</p>
+<h3 id="1-下载-busybox"><a href="#1-下载-busybox" class="headerlink" title="1. 下载 busybox"></a>1. 下载 busybox</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://busybox.net/downloads/busybox-1.35.0.tar.bz2</span><br><span class="line">tar -xjf busybox-1.35.0.tar.bz2</span><br><span class="line"><span class="built_in">cd</span> busybox-1.35.0</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-配置-busybox"><a href="#2-配置-busybox" class="headerlink" title="2. 配置 busybox"></a>2. 配置 busybox</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">make menuconfig</span><br><span class="line">Settings ---&gt;</span><br><span class="line"> [*] Build static binary (no shared libs) </span><br></pre></td></tr></table></figure>
+
+<h3 id="3-明确目标架构"><a href="#3-明确目标架构" class="headerlink" title="3. 明确目标架构"></a>3. 明确目标架构</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ARCH=x86_64</span><br></pre></td></tr></table></figure>
+<!-- export CROSS_COMPILE=aarch64-linux-gnu- -->
+
+<h3 id="4-编译-busybox"><a href="#4-编译-busybox" class="headerlink" title="4. 编译 busybox"></a>4. 编译 busybox</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<p>编译完成后，会生成_install目录</p>
+<h2 id="配置文件系统"><a href="#配置文件系统" class="headerlink" title="配置文件系统"></a>配置文件系统</h2><h3 id="1-Add-etc-dev-and-lib-directories"><a href="#1-Add-etc-dev-and-lib-directories" class="headerlink" title="1. Add etc, dev and lib directories"></a>1. Add etc, dev and lib directories</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> _install</span><br><span class="line"><span class="built_in">mkdir</span> etc dev lib mnt</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-etc-x2F-profile"><a href="#2-etc-x2F-profile" class="headerlink" title="2. etc&#x2F;profile"></a>2. etc&#x2F;profile</h3><p>busybox 作为linuxrc启动后， 会读取&#x2F;etc&#x2F;profile, 这里面设置了一些环境变量和shell的属性</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="built_in">export</span> HOSTNAME=lifan</span><br><span class="line"><span class="built_in">export</span> USER=root</span><br><span class="line"><span class="built_in">export</span> HOME=/home</span><br><span class="line"><span class="built_in">export</span> PS1=<span class="string">&quot;[<span class="variable">$USER</span>@<span class="variable">$HOSTNAME</span> \W]\# &quot;</span></span><br><span class="line">PATH=/bin:/sbin:/usr/bin:/usr/sbin</span><br><span class="line">LD_LIBRARY_PATH=/lib:/usr/lib:<span class="variable">$LD_LIBRARY_PATH</span></span><br><span class="line"><span class="built_in">export</span> PATH LD_LIBRARY_PATH</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-etc-x2F-inittab"><a href="#3-etc-x2F-inittab" class="headerlink" title="3. etc&#x2F;inittab"></a>3. etc&#x2F;inittab</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">::sysinit:/etc/init.d/rcS</span><br><span class="line">::respawn:-/bin/sh</span><br><span class="line">::askfirst:-/bin/sh</span><br><span class="line">::ctrlaltdel:/bin/umount -a -r</span><br></pre></td></tr></table></figure>
+<h3 id="4-etc-x2F-fstab"><a href="#4-etc-x2F-fstab" class="headerlink" title="4. etc&#x2F;fstab"></a>4. etc&#x2F;fstab</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#device  mount-point    type     options   dump   fsck order</span></span><br><span class="line">proc /proc proc defaults 0 0</span><br><span class="line">tmpfs /tmp tmpfs defaults 0 0</span><br><span class="line">sysfs /sys sysfs defaults 0 0</span><br><span class="line">tmpfs /dev tmpfs defaults 0 0</span><br><span class="line">debugfs /sys/kernel/debug debugfs defaults 0 0</span><br><span class="line">kmod_mount /mnt 9p trans=virtio 0 0</span><br></pre></td></tr></table></figure>
+<h3 id="5-etc-x2F-init-d-x2F-rcS"><a href="#5-etc-x2F-init-d-x2F-rcS" class="headerlink" title="5. etc&#x2F;init.d&#x2F;rcS"></a>5. etc&#x2F;init.d&#x2F;rcS</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /sys</span><br><span class="line"><span class="built_in">mkdir</span> -p /tmp</span><br><span class="line"><span class="built_in">mkdir</span> -p /proc</span><br><span class="line"><span class="built_in">mkdir</span> -p /mnt</span><br><span class="line">/bin/mount -a</span><br><span class="line"><span class="built_in">mkdir</span> -p /dev/pts</span><br><span class="line">mount -t devpts devpts /dev/pts</span><br><span class="line"><span class="built_in">echo</span> /sbin/mdev &gt; /proc/sys/kernel/hotplug</span><br><span class="line">mdev -s</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-update-permissions"><a href="#5-update-permissions" class="headerlink" title="5. update permissions"></a>5. update permissions</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x etc/init.d/rcS</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-Add-dev-file"><a href="#6-Add-dev-file" class="headerlink" title="6. Add dev file"></a>6. Add dev file</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">mknod</span> console c 5 1</span><br><span class="line">sudo <span class="built_in">mknod</span> -m 666 null c 1 3 </span><br></pre></td></tr></table></figure>
+
+<h3 id="7-compressed-file-system"><a href="#7-compressed-file-system" class="headerlink" title="7.compressed file system"></a>7.compressed file system</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -print0 | cpio --null -ov --format=newc | gzip -9 &gt; ../initramfs.cpio.gz</span><br></pre></td></tr></table></figure>
+
+<p>这里对这几个文件做一点说明：</p>
+<ol>
+<li>busybox 作为linuxrc启动后， 会读取&#x2F;etc&#x2F;profile, 这里面设置了一些环境变量和shell的属性</li>
+<li>根据&#x2F;etc&#x2F;fstab提供的挂载信息， 进行文件系统的挂载</li>
+<li>busybox会从&#x2F;etc&#x2F;inittab中读取sysinit并执行， 这里sysinit指向了&#x2F;etc&#x2F;init.d&#x2F;rcS</li>
+<li>&#x2F;etc&#x2F;init.d&#x2F;rcS 中 ，mdev -s 这条命令很重要， 它会扫描&#x2F;sys目录，查找字符设备和块设备，并在&#x2F;dev下mknod</li>
+</ol>
+<h2 id="用qemu启动linux内核"><a href="#用qemu启动linux内核" class="headerlink" title="用qemu启动linux内核"></a>用qemu启动linux内核</h2><h3 id="1-安装qemu子系统"><a href="#1-安装qemu子系统" class="headerlink" title="1.安装qemu子系统"></a>1.安装qemu子系统</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install qemu-system-x86_64</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-启动qemu"><a href="#2-启动qemu" class="headerlink" title="2. 启动qemu"></a>2. 启动qemu</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">qemu-system-x86_64 \</span><br><span class="line">    -kernel Image \</span><br><span class="line">    -initrd initramfs.cpio.gz \</span><br><span class="line">    -m 1024M -smp 1 \</span><br><span class="line">	-net nic -net user \</span><br><span class="line">    -nographic -serial mon:stdio \</span><br><span class="line">    -append <span class="string">&quot;root=/dev/ram rdinit=/linuxrc nokaslr console=ttyAMA0 loglevel=8&quot;</span> \</span><br><span class="line">    -S -s</span><br></pre></td></tr></table></figure>
+<p>qemu启动成功后，会等待gdb连接</p>
+<h3 id="3-启动gdb"><a href="#3-启动gdb" class="headerlink" title="3. 启动gdb"></a>3. 启动gdb</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gdb</span><br><span class="line"><span class="comment"># 加载符号文件</span></span><br><span class="line">file linux-5.10.129/vmlinux</span><br><span class="line"><span class="comment"># 连接qemu</span></span><br><span class="line">gdb-remote 1234</span><br><span class="line"><span class="comment"># 连接成功即可开始调试</span></span><br><span class="line">b start_kernel</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/10/distributed-system-readings/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="老樊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老樊的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/10/distributed-system-readings/" class="post-title-link" itemprop="url">distributed system readings</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-10 15:03:21" itemprop="dateCreated datePublished" datetime="2022-12-10T15:03:21+08:00">2022-12-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-13 14:06:30" itemprop="dateModified" datetime="2022-12-13T14:06:30+08:00">2022-12-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">分布式系统</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a curated reading list about distributed systems, including personal digests of books&#x2F;papers&#x2F;blogs.</p>
+<p>Booklist can be found in README, while paper and blog digests are located in the issue list.</p>
+<p>In the issue list, a closed issue means that the digest about it was finished, while an open one means that the digest is to-be-appeared or on-the-flying.</p>
+<p>For each paper digest, I try to answer the following questions:</p>
+<ul>
+<li>What problem does the paper solve? Is it important?</li>
+<li>How does it solve the problem? Any approaches new?</li>
+<li>What could be improved?</li>
+<li>Anything interesting about it?</li>
+</ul>
+<h1 id="Books"><a href="#Books" class="headerlink" title="Books"></a>Books</h1><ul>
+<li>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</li>
+<li>Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing</li>
+<li>Stream Processing with Apache Flink</li>
+</ul>
+<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1><h2 id="theory"><a href="#theory" class="headerlink" title="theory"></a>theory</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/abs/10.1145/3149.214121">FLP定理</a> <br>  Essentially, the impossibility results for Consensus and Atomic Broadcast stem from the inherent difficulty of<br>  determining whether a process has actually crashed or is only “very slow.”</li>
+<li><a target="_blank" rel="noopener" href="http://lamport.azurewebsites.net/pubs/time-clocks.pdf">Time, Clocks and the Ordering of Events in a Distributed System</a><br>  用相对论来阐述分布式系统中时钟的概念</li>
+</ul>
+<h2 id="paxos"><a href="#paxos" class="headerlink" title="paxos"></a>paxos</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf">Part-time Parliament</a></li>
+<li><a target="_blank" rel="noopener" href="http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf">Paxos made Simple</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cs.princeton.edu/courses/archive/fall10/cos597B/papers/paxos-dm.pdf">Paxos made Practical</a></li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/abs/10.1145/1281100.1281103">Paxos made live: an engineering perspective</a></li>
+<li><a target="_blank" rel="noopener" href="https://link.springer.com/article/10.1007/s00446-006-0005-x">Fast paxos</a></li>
+</ul>
+<h2 id="Zookeeper"><a href="#Zookeeper" class="headerlink" title="Zookeeper"></a>Zookeeper</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.datadoghq.com/pdf/zab.totally-ordered-broadcast-protocol.2008.pdf">Zab: A Simple Totally Ordered Broadcast Protocol</a></li>
+<li><a target="_blank" rel="noopener" href="http://static.usenix.org/event/usenix10/tech/full_papers/Hunt.pdf">ZooKeeper: Wait-free coordination for Internet-scale systems</a></li>
+</ul>
+<h2 id="Raft"><a href="#Raft" class="headerlink" title="Raft"></a>Raft</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://raft.github.io/">The Raft Consensus Algorithm</a></li>
+<li><a target="_blank" rel="noopener" href="https://ramcloud.stanford.edu/wiki/download/attachments/11370504/raft.pdf">Raft: In Search of an Understandable Consensus Algorithm</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=JEpsBg0AO6o">Raft lecture (Raft user study)</a></li>
+</ul>
+<h1 id="PhD-Thesis"><a href="#PhD-Thesis" class="headerlink" title="PhD Thesis"></a>PhD Thesis</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.ongardie.net/var/blurbs/pubs/dissertation.pdf">raft博士论文</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-935.pdf">Distributed consensus revised</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lifengfan13.github.io/2022/12/01/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="老樊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老樊的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-01 15:03:21" itemprop="dateCreated datePublished" datetime="2022-12-01T15:03:21+08:00">2022-12-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-13 11:12:15" itemprop="dateModified" datetime="2022-12-13T11:12:15+08:00">2022-12-13</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">老樊</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lifengfan13" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lifengfan13" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lifengfan13@gmail.com" title="E-Mail → mailto:lifengfan13@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/lifengfan13" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;lifengfan13" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">老樊</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
